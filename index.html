@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Bootcamp</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar  navbar-expand-lg bg-dark py-3 fixed-top " data-bs-theme="dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+
+            <button type="button" class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon  navbar-dark"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">
+                            What You`ll Learn
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">
+                            Questions
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">
+                            Instructors
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- showcase -->
+    <section id="showCase" class="bg-dark text-light text-center text-sm-start p-5 p-lg-0 pt-lg-5 hei-wei">
+        <div class="container ">
+            <div class="d-sm-flex align-items-center justify-content-center">
+                <div>
+                    <h1>Become a <span id="course" class="text-warning">web developer </span> </h1>
+                    <p class="lead my-4">we focus on teaching our students the fundamentals of the latest and greatest
+                        technologies to prepare them for their first dev role</p>
+                    <button id="enrollment-btn" class="btn btn-primary btn-lg mt-5" data-bs-toggle="modal"
+                        data-bs-target="#enroll"> Start The
+                        Enrollment</button>
+                </div>
+
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="show case" srcset="">
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- form -->
+    <section id="form" class="text-start bg-dark pt-5 ">
+
+        <div class="container">
+
+
+            <form class="text-center text-sm-start bg-dark d-none hei-wei" action="" name="enquiry" id="enquiry">
+                <div>
+                    <input required class=" mt-3" required type="text" name="firstName" id="" placeholder="first Name">
+                </div>
+
+                <div>
+                    <input required class=" mt-3" required type="text" name="last Name" id="" placeholder="last Name">
+                </div>
+
+                <div>
+                    <input required class=" mt-3" required type="text" name="Email" id="" placeholder="Email">
+                </div>
+
+                <div>
+                    <input required class=" mt-3" required type="text" name="Phone Number" id=""
+                        placeholder="Phone Number">
+                </div>
+                <div>
+                    <div>
+                        <select class="mt-3" name="courses" id="courses">
+                            <option value="web development">Web Development</option>
+                            <option value="Mobile Development">Mobile Development</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        </select>
+                    </div>
+
+                    <button id="formSubmitButton" required class="my-3 btn btn-primary" 
+                         required type=" submit" name="submit" value="submit">submit</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!--  talking avatar-->
+    <section  id="talking-avatar" class=" bg-dark text-light talkingAvatar d-none ">
+        <div class="container rounded-5  p-5 m-1">
+
+            <div class=" d-md-flex  align-item-center justify-content-center p-5 talking-avatar me-2 ">
+                <div id="avatar-content" class="text-center text-md-start d-md-flex flex-column align-item-center justify-content-center">
+                    <h2 id="avatar-h2" class="m-4">Hai Mr. <span class="font-weight-bold text-uppercase text-primary">iron man </span> </h2>
+                    <h4  id="avatar-h4">We have successfully received your application for <span class="font-weight-bold text-uppercase text-primary"> data science </span>. and we will have a online interview today itself. </h4>
+                 
+                </div>
+                
+        
+                <img class="img-fluid  ms-5 cust-avatar-img" src=" img/talking avatar.jpg" alt="talking avatar" srcset="">
+        
+        
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Learn section -->
+
+
+    <!-- web dev -->
+    <section id="webDevelopment" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img class="img-fluid" src="img/web development.svg" alt="fundamentals" srcset="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn Web Development</h2>
+                    <p class="lead">"Web development is a multidisciplinary field that involves designing, coding, and
+                        maintaining websites. It encompasses front-end development, where user interfaces are built, and
+                        back-end development, which focuses on server-side functionality. It requires expertise in
+                        programming languages, frameworks, databases, and a deep understanding of user experience and
+                        web standards."</p>
+                    <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate
+                        reprehenderit! Amet deleniti hic iste!</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non itaque cupiditate unde
+                        voluptate expedita sapiente quod quasi dicta et voluptatibus perferendis, id sit, libero
+                        aspernatur officiis nulla voluptatem a beatae.</p> -->
+                    <a href="https://www.youtube.com/watch?v=Q33KBiDriJY" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile -->
+
+    <section id="mobileDevelopment" class="p-5 bg-dark text-light d-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-md p-5">
+                    <h2>Learn Mobile Development</h2>
+                    <p class="lead">
+                        "Mobile development involves creating applications specifically designed for mobile devices such
+                        as smartphones and tablets. It encompasses both Android and iOS platforms, utilizing programming
+                        languages and frameworks like Java, Kotlin, Swift, and React Native. Mobile development requires
+                        optimizing user interfaces, performance, and functionality for seamless mobile experiences."</p>
+
+
+                    <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate
+                        reprehenderit! Amet deleniti hic iste!</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non itaque cupiditate unde
+                        voluptate expedita sapiente quod quasi dicta et voluptatibus perferendis, id sit, libero
+                        aspernatur officiis nulla voluptatem a beatae.</p> -->
+                    <a href="https://www.youtube.com/watch?v=VPvVD8t02U8" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+
+                <div class="col-md">
+                    <img class="img-fluid" src="img/mobile development.webp" alt="fundamentals" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A I -->
+    <section id="AI" class="p-5 d-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img class="img-fluid" src="img/a.webp" alt="fundamentals" srcset="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn Artificial Intelligence</h2>
+                    <p class="lead">"Artificial Intelligence (AI) is a branch of computer science that focuses on
+                        creating intelligent machines capable of performing tasks that typically require human
+                        intelligence. It encompasses areas like machine learning, natural language processing, computer
+                        vision, and expert systems. AI is revolutionizing industries, enabling automation, data
+                        analysis, and advanced decision-making."</p>
+                    <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate
+                        reprehenderit! Amet deleniti hic iste!</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non itaque cupiditate unde
+                        voluptate expedita sapiente quod quasi dicta et voluptatibus perferendis, id sit, libero
+                        aspernatur officiis nulla voluptatem a beatae.</p> -->
+                    <a href="https://www.youtube.com/watch?v=JMUxmLyrhSk" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- data science -->
+
+    <section id="dataScience" class="p-5 bg-dark text-light d-none">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-md p-5">
+                    <h2>Learn Data Science</h2>
+                    <p class="lead">"Data science is a multidisciplinary field that combines statistical analysis,
+                        machine learning, and programming to extract insights and knowledge from data. It involves
+                        collecting, cleaning, and transforming data, applying algorithms and models to uncover patterns
+                        and make predictions, ultimately driving data-informed decision-making in various domains such
+                        as business, healthcare, and research."</p>
+                    <a href="https://www.youtube.com/watch?v=-ETQ97mXXF0" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+
+                <div class="col-md">
+                    <img class="img-fluid" src="img/data science.webp" alt="fundamentals" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Freequently Asked Questions
+            </h2>
+            <!-- accordian start -->
+
+            <div class="accordion accordion-flush" id="questions">
+                <!--id has changed here  and data-bs-parent in all grand child has also made the same-->
+                <!-- item-1 -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-One">
+                            <!--if we want to change the value of data-bs-target then we must change the next div`s id also same alike this-->
+                            Where exactly are you located?
+                        </button>
+                    </h2>
+                    <div id="question-One" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Kinfra,calicut. its about a 10 km away from calicut Airport</div>
+                    </div>
+                </div>
+
+                <!-- item-2 -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Two">
+                            <!--if we want to change the value of data-bs-target then we must change the next div`s id also same alike this-->
+                            How much does it cost to attend?
+                        </button>
+                    </h2>
+                    <div id="question-Two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">You have to pay rupees 10000 as a caution deposit to attend the
+                            fumigation</div>
+                    </div>
+                </div>
+
+                <!-- item-3 -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Three">
+                            <!--if we want to change the value of data-bs-target then we must change the next div`s id also same alike this-->
+                            What do i need to know
+                        </button>
+                    </h2>
+                    <div id="question-Three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Basic programming knowledge.</div>
+                    </div>
+                </div>
+
+                <!-- item-4 -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Four">
+                            <!--if we want to change the value of data-bs-target then we must change the next div`s id also same alike this-->
+                            How do i signUp?
+                        </button>
+                    </h2>
+                    <div id="question-Four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Click on the button here and go through the instructions
+                            <button class="btn btn-primary "><a class="nav-link text-light"
+                                    href="https://www.facebook.com/">SignUp </a> </button></div>
+                    </div>
+                </div>
+
+                <!-- item-5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Five">
+                            <!--if we want to change the value of data-bs-target then we must change the next div`s id also same alike this-->
+                            Do you help me find a job?
+                        </button>
+                    </h2>
+                    <div id="question-Five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Yes, We have a dedicated placement cell to help you to get a high
+                            paying job</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <!--accordian end  -->
+        </div>
+    </section>
+
+    <!-- instructors -->
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructors</h2>
+            <p class="lead text-center mb-5 text-white">
+                All of Our instructors have 5+ years working experience in their subject
+            </p>
+            <div class="row g-2">
+                <!-- instructor-1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/11.jpg"
+                                alt="random people" srcset="">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p class="card-text">John Doe guides aspiring developers, providing instruction, guidance,
+                                and support in mastering web development skills.</p>
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://in.linkedin.com/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- instructor-2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/12.jpg"
+                                alt="random people" srcset="">
+                            <h3 class="card-title mb-3">Robert</h3>
+                            <p class="card-text">Robert is capable to empowers individuals by imparting knowledge and
+                                guidance to master the intricacies of artificial intelligence</p>
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://in.linkedin.com/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- instructor-3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/13.jpg"
+                                alt="random people" srcset="">
+                            <h3 class="card-title mb-3">Chris</h3>
+                            <p class="card-text">Chris is one of our senior turor who mentors learners in acquiring
+                                skills and knowledge to excel in mobile app development..</p>
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://in.linkedin.com/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- instructor-4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/women/14.jpg"
+                                alt="random people" srcset="">
+                            <h3 class="card-title mb-3">Wanda</h3>
+                            <p class="card-text">Wanda is a world famous tutor who equips learners with the necessary
+                                skills to analyze and derive insights from complex datasets..</p>
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://in.linkedin.com/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact & map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group listj-group-flush lead">
+                        <!-- li-1 -->
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+                        </li>
+                        <!-- li-2 -->
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> (555) 555-55555
+                        </li>
+                        <!-- li-3 -->
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone:</span> (333) 333-33333
+                        </li>
+                        <!-- li-4 -->
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span> (555) enroll@frontendbc.text-sm-start
+                        </li>
+                        <!-- li-5 -->
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span> (555) enroll@frontendbc.text-sm-start
+                        </li>
+                    </ul>
+                </div>
+                <!-- map -->
+                <div class="col-md">
+                    <h1 class="ms-auto d-none   d-md-flex justify-content-center pb-2">Get Your Direction</h1>
+                    <div class="map">
+                        <iframe class=" d-md-flex map-q"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.481872017949!2d75.88976940936465!3d11.151913388974807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65137afab81b3%3A0xafb3bc821d8c6a7e!2skinfra%20canteen!5e0!3m2!1sen!2sin!4v1684694205398!5m2!1sen!2sin"
+                            width="600" height="325" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="p-5 text-white text-center bg-dark position-relative">
+        <div class="container">
+            <p class="lead">
+                copyright &copy; 2021 Frontend Bootcamp
+            </p>
+            <a href="#" class="position-fixed text-warning bottom-0 end-0 p-2">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <!-- custome js -->
+    <script src="main.js"></script>
+</body>
+
+</html>
